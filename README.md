@@ -1,10 +1,9 @@
-# IMCALC PLUGIN FOR WORDPRESS
+# IMCALC WORDPRESS PLUGIN - CALCULADORA DE ÍNDICE DE MASSA CORPORAL
 
-Plugin Para Calcular Índice de Massa Corporal no Wordpress
+Plugin Para Calcular Índice de Massa Corporal (IMC) no Wordpress
 Min Version : 5.0
 
 Para utilizar o plugin após instalação utilize o shortcode [imcalc]
 
 Plugin em Desenvolvimento...
 
-*Rafael Galdino da Silva - 2020*
