@@ -4,9 +4,9 @@
 * Plugin Name: Calculadora de IMC
 * Description: Calcula o seu índice de massa corporal
 * Version: 1.0
-* Author: DeskCode - Rafael Galdino, Elias Dias, Arclênio Ferreira
-* Author URI: https://www.behance.net/deskcode
+* Author: Rafael Galdino da Silva
 */
+
 function registerAssets() {
     /**
      * Registrando os Estilos
@@ -52,6 +52,16 @@ function enqueueAssets() {
 
 add_action( 'wp_enqueue_scripts', 'enqueueAssets' );
 
+
+add_action('admin_menu', 'imcalc_admin_setup');
+ 
+function imcalc_admin_setup(){
+    add_menu_page( 'IMCALC Admin', 'IMCALC', 'manage_options', 'imcalc', 'admin_IMC_Creation' );
+}
+ 
+function admin_IMC_Creation(){
+    echo "<h1>IMCALC Admin</h1> <h3> Use o Shortcode [imcalc] para adicionar um formulário de cálculo de IMC em qualquer lugar do seu site! </h3>";
+}
 
 
 function form_IMC_Creation() {
